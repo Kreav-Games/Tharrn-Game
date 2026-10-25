@@ -1,0 +1,11 @@
+{
+	"Containers": [
+		{"Id": "arrival_supply_crate", "Name": "Expedition supply crate", "Slots": 8,
+			"InitialContents": [{"ItemId": "pick", "Count": 1}, {"ItemId": "cleaver", "Count": 1}, {"ItemId": "provisions", "Count": 2}],
+			"Size": {"X": 1.0, "Y": 0.7, "Z": 0.6}, "Color": {"R": 0.35, "G": 0.3, "B": 0.15, "A": 1}},
+		{"Id": "camp_storage", "Name": "Camp storage", "Slots": 16, "Size": {"X": 1.2, "Y": 0.7, "Z": 0.8}, "Color": {"R": 0.3, "G": 0.22, "B": 0.12, "A": 1}},
+		{"Id": "creature_remains", "Name": "Remains", "Slots": 4, "bDestroyWhenEmpty": true, "Size": {"X": 0.7, "Y": 0.5, "Z": 0.25}, "Color": {"R": 0.35, "G": 0.08, "B": 0.08, "A": 1}},
+		{"Id": "recovery_cache", "Name": "Recovery cache", "Slots": 32, "bDestroyWhenEmpty": true, "Size": {"X": 0.6, "Y": 0.5, "Z": 0.4}, "Color": {"R": 0.15, "G": 0.3, "B": 0.6, "A": 1}},
+		{"Id": "dropped_pack", "Name": "Dropped pack", "Slots": 4, "bDestroyWhenEmpty": true, "Size": {"X": 0.45, "Y": 0.35, "Z": 0.3}, "Color": {"R": 0.3, "G": 0.3, "B": 0.3, "A": 1}}
+	]
+}

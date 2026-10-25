@@ -1,0 +1,20 @@
+{
+	"_note": "Greybox prototype data for the M1 slice. Names and numbers are placeholders, not canon.",
+	"Items": [
+		{"Id": "stone", "Name": "Stone", "Category": "Resource", "MaxStack": 50, "Weight": 1.0, "Color": {"R": 0.45, "G": 0.43, "B": 0.4, "A": 1}},
+		{"Id": "fibre", "Name": "Cave fibre", "Category": "Resource", "MaxStack": 100, "Weight": 0.1, "Color": {"R": 0.4, "G": 0.6, "B": 0.3, "A": 1}},
+		{"Id": "scrap_metal", "Name": "Scrap metal", "Category": "Resource", "MaxStack": 30, "Weight": 1.5, "Color": {"R": 0.5, "G": 0.3, "B": 0.15, "A": 1}},
+		{"Id": "fungus", "Name": "Pale fungus", "Category": "Food", "MaxStack": 20, "Weight": 0.2, "Food": 8, "Water": 3,
+			"Description": "Edible raw; filling but thin.", "Color": {"R": 0.85, "G": 0.8, "B": 0.6, "A": 1}},
+		{"Id": "raw_meat", "Name": "Raw meat", "Category": "Food", "MaxStack": 10, "Weight": 0.5, "Food": 6, "Health": -4,
+			"Description": "Eating it raw hurts; cook it (M2).", "Color": {"R": 0.6, "G": 0.15, "B": 0.12, "A": 1}},
+		{"Id": "provisions", "Name": "Cooked provisions", "Category": "Food", "MaxStack": 10, "Weight": 0.4, "Food": 35, "Water": 5, "Effect": "well_fed",
+			"Description": "Expedition ration. Well fed: faster stamina recovery.", "Color": {"R": 0.8, "G": 0.55, "B": 0.25, "A": 1}},
+		{"Id": "pick", "Name": "Survey pick", "Category": "Tool", "MaxStack": 1, "Weight": 3.0, "ToolTag": "mining", "MaxDurability": 120, "bHasMelee": true,
+			"Melee": {"Damage": 9, "StaminaCost": 12, "Windup": 0.32, "Active": 0.15, "Recovery": 0.5, "Range": 170, "ArcDegrees": 100, "Poise": 10},
+			"Description": "Breaks stone outcrops. A poor weapon.", "Color": {"R": 0.55, "G": 0.55, "B": 0.6, "A": 1}},
+		{"Id": "cleaver", "Name": "Salvaged cleaver", "Category": "Weapon", "MaxStack": 1, "Weight": 2.5, "ToolTag": "cutting", "MaxDurability": 200, "bHasMelee": true,
+			"Melee": {"Damage": 18, "StaminaCost": 14, "Windup": 0.22, "Active": 0.15, "Recovery": 0.38, "Range": 200, "ArcDegrees": 120, "Poise": 18},
+			"Description": "Fast, reliable melee weapon.", "Color": {"R": 0.7, "G": 0.68, "B": 0.62, "A": 1}}
+	]
+}

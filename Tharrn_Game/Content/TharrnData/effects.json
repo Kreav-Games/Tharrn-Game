@@ -1,0 +1,5 @@
+{
+	"Effects": [
+		{"Id": "well_fed", "Name": "Well fed", "Duration": 600, "StaminaRegenMultiplier": 1.25, "HealthRegenPerSecond": 0.15}
+	]
+}

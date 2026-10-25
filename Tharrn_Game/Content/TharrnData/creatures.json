@@ -1,0 +1,9 @@
+{
+	"Creatures": [
+		{"Id": "skitter", "Name": "Skitter", "bHostile": true, "MaxHealth": 55, "MaxPoise": 30, "WalkSpeed": 260, "RunSpeed": 520,
+			"AggroRadius": 1500, "LeashRadius": 3200, "WanderRadius": 700, "AttackCooldown": 1.1,
+			"Attack": {"Damage": 12, "StaminaCost": 0, "Windup": 0.75, "Active": 0.2, "Recovery": 0.9, "Range": 200, "ArcDegrees": 90, "Poise": 22, "Lunge": 650},
+			"Drops": [{"ItemId": "raw_meat", "Count": 2}], "RespawnSeconds": 150,
+			"BodyScale": {"X": 1.2, "Y": 1.0, "Z": 0.7}, "Color": {"R": 0.42, "G": 0.12, "B": 0.08, "A": 1}}
+	]
+}

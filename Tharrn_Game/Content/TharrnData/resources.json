@@ -1,0 +1,12 @@
+{
+	"Resources": [
+		{"Id": "fibre_plant", "Name": "Fibre tuft", "Yields": [{"ItemId": "fibre", "Count": 3}], "Charges": 3, "GatherSeconds": 0.8, "RespawnSeconds": 240,
+			"Shape": "Cone", "Size": {"X": 0.7, "Y": 0.7, "Z": 1.1}, "Color": {"R": 0.35, "G": 0.55, "B": 0.3, "A": 1}},
+		{"Id": "fungus_patch", "Name": "Pale fungus cluster", "Yields": [{"ItemId": "fungus", "Count": 2}], "Charges": 2, "GatherSeconds": 1.0, "RespawnSeconds": 300,
+			"Shape": "Sphere", "Size": {"X": 0.9, "Y": 0.9, "Z": 0.5}, "Color": {"R": 0.85, "G": 0.8, "B": 0.6, "A": 1}},
+		{"Id": "stone_outcrop", "Name": "Stone outcrop", "RequiredToolTag": "mining", "Yields": [{"ItemId": "stone", "Count": 4}], "Charges": 5, "GatherSeconds": 1.3,
+			"RespawnSeconds": 420, "ToolWear": 3, "Shape": "Sphere", "Size": {"X": 1.6, "Y": 1.4, "Z": 1.1}, "Color": {"R": 0.42, "G": 0.4, "B": 0.38, "A": 1}},
+		{"Id": "scrap_pile", "Name": "Salvage pile", "Yields": [{"ItemId": "scrap_metal", "Count": 2}], "Charges": 3, "GatherSeconds": 1.6, "RespawnSeconds": 600,
+			"Shape": "Cube", "Size": {"X": 1.2, "Y": 0.9, "Z": 0.5}, "Color": {"R": 0.45, "G": 0.25, "B": 0.12, "A": 1}}
+	]
+}

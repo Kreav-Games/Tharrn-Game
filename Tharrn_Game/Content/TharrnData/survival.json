@@ -1,0 +1,21 @@
+{
+	"FoodDrainPerSecond": 0.045,
+	"WaterDrainPerSecond": 0.07,
+	"StarvingHealthLossPerSecond": 0.5,
+	"DehydratedHealthLossPerSecond": 0.8,
+	"HealthRegenPerSecond": 0.25,
+	"HealthRegenNeedsThreshold": 30,
+	"StaminaRegenPerSecond": 18,
+	"StaminaRegenDelay": 1.0,
+	"SprintStaminaPerSecond": 10,
+	"BlockingStaminaRegenScale": 0.3,
+	"WaterPerDrink": 25,
+	"DrinkSeconds": 1.5,
+	"RecoverySeconds": 3,
+	"RecoveryHealthFraction": 0.6,
+	"RecoveryMinFood": 40,
+	"RecoveryMinWater": 40,
+	"PlayerCarryWeight": 60,
+	"PlayerSlots": 24,
+	"Unarmed": {"Damage": 4, "StaminaCost": 6, "Windup": 0.15, "Active": 0.12, "Recovery": 0.3, "Range": 140, "ArcDegrees": 100, "Poise": 6}
+}

@@ -1,0 +1,108 @@
+{
+	"Name": "DeepCaverns_Slice01",
+	"_note": "Greybox layout for the M1-M5 slice. Units are centimetres; +X runs from the arrival chamber towards the habitat. Spawn Ids are persistence keys: never reuse or renumber one.",
+	"WallThickness": 100,
+	"FillLightIntensity": 0.6,
+	"ExposureBias": -0.7,
+	"ArrivalPoint": {"X": -600, "Y": 0, "Z": 140},
+	"ArrivalYaw": 0,
+	"RecoveryPoint": {"X": 4300, "Y": -350, "Z": 110},
+	"Palette": [
+		{"Name": "rock", "Color": {"R": 0.2, "G": 0.19, "B": 0.18, "A": 1}},
+		{"Name": "floor", "Color": {"R": 0.3, "G": 0.28, "B": 0.25, "A": 1}},
+		{"Name": "edran", "Color": {"R": 0.5, "G": 0.42, "B": 0.3, "A": 1}},
+		{"Name": "builder", "Color": {"R": 0.1, "G": 0.12, "B": 0.16, "A": 1}},
+		{"Name": "modern", "Color": {"R": 0.36, "G": 0.38, "B": 0.42, "A": 1}},
+		{"Name": "camp", "Color": {"R": 0.24, "G": 0.34, "B": 0.2, "A": 1}},
+		{"Name": "hazard", "Color": {"R": 0.6, "G": 0.32, "B": 0.05, "A": 1}},
+		{"Name": "seal", "Color": {"R": 0.55, "G": 0.1, "B": 0.07, "A": 1}},
+		{"Name": "path", "Color": {"R": 0.36, "G": 0.32, "B": 0.27, "A": 1}},
+		{"Name": "water", "Color": {"R": 0.04, "G": 0.18, "B": 0.38, "A": 1}}
+	],
+	"Rooms": [
+		{"Name": "Arrival Chamber", "Min": {"X": -1500, "Y": -1500}, "Max": {"X": 1500, "Y": 1500}, "Height": 1000, "Floor": "floor", "Wall": "rock",
+			"LightIntensity": 16000, "LightColor": {"R": 0.8, "G": 0.85, "B": 1.0, "A": 1}, "Label": "ARRIVAL CHAMBER"},
+		{"Name": "Tunnel A", "Min": {"X": 1500, "Y": -300}, "Max": {"X": 3000, "Y": 300}, "Height": 450, "Floor": "path", "Wall": "rock", "LightIntensity": 3500},
+		{"Name": "Camp Cavern", "Min": {"X": 3000, "Y": -2500}, "Max": {"X": 7000, "Y": 2500}, "Height": 1200, "Floor": "floor", "Wall": "rock",
+			"LightIntensity": 26000, "Label": "CAMP CAVERN"},
+		{"Name": "Tunnel B", "Min": {"X": 7000, "Y": -350}, "Max": {"X": 8500, "Y": 350}, "Height": 500, "Floor": "path", "Wall": "rock", "LightIntensity": 3500},
+		{"Name": "Wildlife Habitat", "Min": {"X": 8500, "Y": -3000}, "Max": {"X": 13000, "Y": 3000}, "Height": 1400, "Floor": "floor", "Wall": "rock",
+			"LightIntensity": 30000, "LightColor": {"R": 0.75, "G": 1.0, "B": 0.8, "A": 1}, "Label": "WILDLIFE HABITAT"},
+		{"Name": "Tunnel C", "Min": {"X": 4600, "Y": -5000}, "Max": {"X": 5400, "Y": -2500}, "Height": 500, "Floor": "path", "Wall": "rock", "LightIntensity": 3500},
+		{"Name": "Ruined Station", "Min": {"X": 3200, "Y": -8500}, "Max": {"X": 7600, "Y": -5000}, "Height": 900, "Floor": "modern", "Wall": "rock",
+			"LightIntensity": 14000, "LightColor": {"R": 0.9, "G": 0.95, "B": 1.0, "A": 1}, "Label": "RUINED STATION", "LabelYaw": 90},
+		{"Name": "Tunnel D", "Min": {"X": 7600, "Y": -7100}, "Max": {"X": 9200, "Y": -6300}, "Height": 600, "Floor": "path", "Wall": "rock", "LightIntensity": 3000},
+		{"Name": "Boss Enclosure", "Min": {"X": 9200, "Y": -9800}, "Max": {"X": 13200, "Y": -4800}, "Height": 1600, "Floor": "edran", "Wall": "builder",
+			"LightIntensity": 22000, "LightColor": {"R": 1.0, "G": 0.6, "B": 0.5, "A": 1}, "Label": "BOSS ENCLOSURE (SEALED)"}
+	],
+	"Blocks": [
+		{"Center": {"X": -500, "Y": 0, "Z": 15}, "Size": {"X": 1600, "Y": 1600, "Z": 30}, "Material": "edran"},
+		{"Center": {"X": -1420, "Y": -500, "Z": 450}, "Size": {"X": 160, "Y": 160, "Z": 900}, "Material": "builder"},
+		{"Center": {"X": -1420, "Y": 500, "Z": 450}, "Size": {"X": 160, "Y": 160, "Z": 900}, "Material": "builder"},
+		{"Center": {"X": -1420, "Y": 0, "Z": 860}, "Size": {"X": 160, "Y": 1160, "Z": 180}, "Material": "builder"},
+		{"Center": {"X": -1480, "Y": 0, "Z": 400}, "Size": {"X": 40, "Y": 840, "Z": 760}, "Material": "builder"},
+		{"Center": {"X": 0, "Y": -1150, "Z": 5}, "Size": {"X": 2900, "Y": 30, "Z": 10}, "Material": "modern"},
+		{"Center": {"X": 0, "Y": -1050, "Z": 5}, "Size": {"X": 2900, "Y": 30, "Z": 10}, "Material": "modern"},
+		{"Center": {"X": 1150, "Y": 1150, "Z": 300}, "Size": {"X": 400, "Y": 400, "Z": 600}, "Material": "modern"},
+
+		{"Center": {"X": 5000, "Y": 0, "Z": 2}, "Size": {"X": 2400, "Y": 2400, "Z": 4}, "Material": "camp"},
+		{"Center": {"X": 4300, "Y": -600, "Z": 10}, "Size": {"X": 200, "Y": 90, "Z": 20}, "Material": "edran"},
+		{"Center": {"X": 6300, "Y": 700, "Z": 600}, "Size": {"X": 260, "Y": 260, "Z": 1200}, "Material": "rock"},
+		{"Center": {"X": 6600, "Y": 2150, "Z": 5}, "Size": {"X": 500, "Y": 400, "Z": 10}, "Material": "water"},
+
+		{"Center": {"X": 10500, "Y": 0, "Z": 150}, "Size": {"X": 400, "Y": 500, "Z": 300}, "Material": "rock"},
+		{"Center": {"X": 12000, "Y": 500, "Z": 250}, "Size": {"X": 300, "Y": 300, "Z": 500}, "Material": "rock"},
+		{"Center": {"X": 12600, "Y": -2600, "Z": 200}, "Size": {"X": 800, "Y": 700, "Z": 400}, "Material": "rock"},
+		{"Center": {"X": 9300, "Y": 2500, "Z": 120}, "Size": {"X": 700, "Y": 500, "Z": 240}, "Material": "rock"},
+
+		{"Center": {"X": 4000, "Y": -6000, "Z": 200}, "Size": {"X": 1200, "Y": 100, "Z": 400}, "Material": "modern"},
+		{"Center": {"X": 6800, "Y": -7500, "Z": 300}, "Size": {"X": 100, "Y": 1500, "Z": 600}, "Material": "modern"},
+		{"Center": {"X": 5400, "Y": -8200, "Z": 60}, "Size": {"X": 400, "Y": 150, "Z": 120}, "Material": "modern"},
+		{"Center": {"X": 3290, "Y": -6800, "Z": 400}, "Size": {"X": 60, "Y": 1200, "Z": 600}, "Material": "edran"},
+		{"Center": {"X": 6200, "Y": -6200, "Z": 40}, "Size": {"X": 700, "Y": 300, "Z": 80}, "Material": "modern"},
+
+		{"Center": {"X": 9150, "Y": -6700, "Z": 300}, "Size": {"X": 100, "Y": 800, "Z": 600}, "Material": "seal"},
+		{"Center": {"X": 10500, "Y": -6000, "Z": 800}, "Size": {"X": 400, "Y": 400, "Z": 1600}, "Material": "builder"},
+		{"Center": {"X": 12000, "Y": -8800, "Z": 800}, "Size": {"X": 400, "Y": 400, "Z": 1600}, "Material": "builder"},
+		{"Center": {"X": 11200, "Y": -7300, "Z": 10}, "Size": {"X": 2500, "Y": 300, "Z": 20}, "Material": "water"},
+		{"Center": {"X": 11200, "Y": -7300, "Z": 200}, "Size": {"X": 300, "Y": 300, "Z": 400}, "Material": "hazard"}
+	],
+	"Lights": [
+		{"Location": {"X": -1250, "Y": 0, "Z": 450}, "Intensity": 5000, "Radius": 1600, "Color": {"R": 0.45, "G": 0.6, "B": 1.0, "A": 1}},
+		{"Location": {"X": 5000, "Y": 0, "Z": 180}, "Intensity": 9000, "Radius": 2600, "Color": {"R": 1.0, "G": 0.6, "B": 0.3, "A": 1}},
+		{"Location": {"X": 11200, "Y": -7300, "Z": 300}, "Intensity": 8000, "Radius": 2500, "Color": {"R": 0.3, "G": 0.7, "B": 1.0, "A": 1}}
+	],
+	"Spawns": [
+		{"Type": "Container", "Def": "arrival_supply_crate", "Id": "cont.arrival.crate", "Location": {"X": -300, "Y": 450, "Z": 60}, "Yaw": 15, "Label": "Expedition supply crate"},
+		{"Type": "Label", "Location": {"X": -1300, "Y": 0, "Z": 700}, "Yaw": 0, "Label": "ARRIVAL GATE - DARK"},
+		{"Type": "Label", "Location": {"X": -1300, "Y": 950, "Z": 260}, "Yaw": 0, "Label": "WAIT FOR THE BELL"},
+
+		{"Type": "Container", "Def": "camp_storage", "Id": "cont.camp.storage", "Location": {"X": 4200, "Y": 1500, "Z": 40}, "Yaw": 0, "Label": "Camp storage"},
+		{"Type": "Water", "Id": "water.camp.seep", "Location": {"X": 6500, "Y": 1950, "Z": 13}, "Label": "Water seep"},
+		{"Type": "Resource", "Def": "fibre_plant", "Id": "res.camp.fibre.01", "Location": {"X": 3600, "Y": -1800, "Z": 55}},
+		{"Type": "Resource", "Def": "fibre_plant", "Id": "res.camp.fibre.02", "Location": {"X": 4000, "Y": -2100, "Z": 55}},
+		{"Type": "Resource", "Def": "fibre_plant", "Id": "res.camp.fibre.03", "Location": {"X": 6400, "Y": -1700, "Z": 55}},
+		{"Type": "Resource", "Def": "fibre_plant", "Id": "res.camp.fibre.04", "Location": {"X": 6700, "Y": -2100, "Z": 55}},
+		{"Type": "Resource", "Def": "fungus_patch", "Id": "res.camp.fungus.01", "Location": {"X": 3500, "Y": 1900, "Z": 25}},
+		{"Type": "Resource", "Def": "fungus_patch", "Id": "res.camp.fungus.02", "Location": {"X": 3800, "Y": 2200, "Z": 25}},
+		{"Type": "Resource", "Def": "fungus_patch", "Id": "res.camp.fungus.03", "Location": {"X": 6600, "Y": 1200, "Z": 25}},
+		{"Type": "Label", "Location": {"X": 5000, "Y": 0, "Z": 260}, "Yaw": 180, "Label": "CAMP SITE - building arrives in M2"},
+
+		{"Type": "Resource", "Def": "stone_outcrop", "Id": "res.habitat.stone.01", "Location": {"X": 9500, "Y": -2200, "Z": 55}},
+		{"Type": "Resource", "Def": "stone_outcrop", "Id": "res.habitat.stone.02", "Location": {"X": 10200, "Y": 2300, "Z": 55}},
+		{"Type": "Resource", "Def": "stone_outcrop", "Id": "res.habitat.stone.03", "Location": {"X": 12200, "Y": -1800, "Z": 55}},
+		{"Type": "Resource", "Def": "stone_outcrop", "Id": "res.habitat.stone.04", "Location": {"X": 12400, "Y": 1800, "Z": 55}},
+		{"Type": "Resource", "Def": "scrap_pile", "Id": "res.habitat.scrap.01", "Location": {"X": 11000, "Y": -500, "Z": 25}},
+		{"Type": "Resource", "Def": "scrap_pile", "Id": "res.habitat.scrap.02", "Location": {"X": 9800, "Y": 800, "Z": 25}},
+		{"Type": "Resource", "Def": "fungus_patch", "Id": "res.habitat.fungus.01", "Location": {"X": 12600, "Y": 0, "Z": 25}},
+		{"Type": "Resource", "Def": "fungus_patch", "Id": "res.habitat.fungus.02", "Location": {"X": 9200, "Y": -1200, "Z": 25}},
+		{"Type": "Spawner", "Def": "skitter", "Id": "spawn.habitat.skitter.01", "Location": {"X": 11200, "Y": 1300, "Z": 0}, "Count": 1},
+		{"Type": "Spawner", "Def": "skitter", "Id": "spawn.habitat.skitter.02", "Location": {"X": 11800, "Y": -1300, "Z": 0}, "Count": 1},
+
+		{"Type": "Resource", "Def": "scrap_pile", "Id": "res.station.scrap.01", "Location": {"X": 4500, "Y": -7200, "Z": 25}},
+		{"Type": "Resource", "Def": "scrap_pile", "Id": "res.station.scrap.02", "Location": {"X": 6000, "Y": -5800, "Z": 25}},
+		{"Type": "Resource", "Def": "scrap_pile", "Id": "res.station.scrap.03", "Location": {"X": 7000, "Y": -8000, "Z": 25}},
+		{"Type": "Label", "Location": {"X": 3400, "Y": -6800, "Z": 520}, "Yaw": 0, "Label": "CARVED WALL - recording arrives in M4"},
+		{"Type": "Label", "Location": {"X": 9040, "Y": -6700, "Z": 360}, "Yaw": 180, "Label": "SEALED - opens in M4"}
+	]
+}
